@@ -1,0 +1,64 @@
+thread 'copy LTO artifacts for 3yvrzxmi0mq2o1hz' panicked at /rustc/bf8716f1cd6416266807706bcae0ecb2e51c9d4a\compiler\rustc_codegen_ssa\src\back\write.rs:879:5:
+assertion failed: module_config.emit_obj != EmitObj::None
+stack backtrace:
+   0:     0x7fff30c1ca14 - std::backtrace::Backtrace::force_capture::h8247f75bae7d3666
+   1:     0x7fff30c1c974 - std::backtrace::Backtrace::force_capture::h8247f75bae7d3666
+   2:     0x7ffedba5d904 - <tracing_subscriber[7c06cca3b0b52194]::fmt::format::Writer>::write_fmt
+   3:     0x7fff30c35b43 - std::panicking::rust_panic_with_hook::h102d157caa313751
+   4:     0x7fff30c359ab - <std::panicking::begin_panic_handler::StaticStrPayload as core::panic::PanicPayload>::take_box::h2b58bd494e828a10
+   5:     0x7fff30c32bc9 - <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt::h38af675760e4b42b
+   6:     0x7fff30c356b2 - rust_begin_unwind
+   7:     0x7fff30c8a447 - core::panicking::panic_fmt::hdbb75bebc22f3408
+   8:     0x7fff30c8a522 - core::panicking::panic::hb11f2d409f96600e
+   9:     0x7ffed7b508f2 - <rustc_target[ec0927edc6c048a7]::abi::TyAndLayout<rustc_middle[305c3c558a638366]::ty::Ty> as rustc_codegen_llvm[443463b3567c396f]::type_of::LayoutLlvmExt>::scalar_llvm_type_at
+  10:     0x7ffed7b230a2 - <rustc_codegen_llvm[443463b3567c396f]::llvm_::archive_ro::Child as core[504abba97fdfc25d]::ops::drop::Drop>::drop
+  11:     0x7fff30c47ebc - std::sys::windows::thread::Thread::new::h043c21a0af8e89c3
+  12:     0x7fff774cc7e7 - BaseThreadInitThunk
+  13:     0x7fff78c2c7c0 - RtlUserThreadStart
+
+
+rustc version: 1.77.0-nightly (bf8716f1c 2023-12-24)
+platform: x86_64-pc-windows-msvcthread 'coordinator' panicked at compiler\rustc_middle\src\util\bug.rs:36:26:
+/rustc/bf8716f1cd6416266807706bcae0ecb2e51c9d4a\compiler\rustc_codegen_ssa\src\back\write.rs:1572:29: worker thread panicked
+stack backtrace:
+   0:     0x7fff30c1ca14 - std::backtrace::Backtrace::force_capture::h8247f75bae7d3666
+   1:     0x7fff30c1c974 - std::backtrace::Backtrace::force_capture::h8247f75bae7d3666
+   2:     0x7ffedba5d904 - <tracing_subscriber[7c06cca3b0b52194]::fmt::format::Writer>::write_fmt
+   3:     0x7fff30c35b43 - std::panicking::rust_panic_with_hook::h102d157caa313751
+   4:     0x7ffedce44514 - <rustc_middle[305c3c558a638366]::ty::sty::ClosureArgs as rustc_middle[305c3c558a638366]::ty::context::Lift>::lift_to_tcx
+   5:     0x7ffedce43bd9 - <rustc_middle[305c3c558a638366]::ty::sty::ClosureArgs as rustc_middle[305c3c558a638366]::ty::context::Lift>::lift_to_tcx
+   6:     0x7ffedce43843 - <rustc_middle[305c3c558a638366]::ty::sty::ClosureArgs as rustc_middle[305c3c558a638366]::ty::context::Lift>::lift_to_tcx
+   7:     0x7ffedce1893e - rustc_middle[305c3c558a638366]::util::bug::bug_fmt
+   8:     0x7ffedce1816d - <rustc_middle[305c3c558a638366]::ty::adt::AdtDef>::variant_with_id
+   9:     0x7ffedce1813d - <rustc_middle[305c3c558a638366]::ty::adt::AdtDef>::variant_with_id
+  10:     0x7ffedce18862 - rustc_middle[305c3c558a638366]::util::bug::bug_fmt
+  11:     0x7ffed7b5339c - <rustc_target[ec0927edc6c048a7]::abi::TyAndLayout<rustc_middle[305c3c558a638366]::ty::Ty> as rustc_codegen_llvm[443463b3567c396f]::type_of::LayoutLlvmExt>::scalar_llvm_type_at
+  12:     0x7ffed7b23533 - <rustc_codegen_llvm[443463b3567c396f]::llvm_::archive_ro::Child as core[504abba97fdfc25d]::ops::drop::Drop>::drop
+  13:     0x7fff30c47ebc - std::sys::windows::thread::Thread::new::h043c21a0af8e89c3
+  14:     0x7fff774cc7e7 - BaseThreadInitThunk
+  15:     0x7fff78c2c7c0 - RtlUserThreadStart
+thread 'rustc' panicked at compiler\rustc_middle\src\util\bug.rs:36:26:
+/rustc/bf8716f1cd6416266807706bcae0ecb2e51c9d4a\compiler\rustc_codegen_ssa\src\back\write.rs:1945:17: panic during codegen/LLVM phase
+stack backtrace:
+   0:     0x7fff30c1ca14 - std::backtrace::Backtrace::force_capture::h8247f75bae7d3666
+   1:     0x7fff30c1c974 - std::backtrace::Backtrace::force_capture::h8247f75bae7d3666
+   2:     0x7ffedba5d904 - <tracing_subscriber[7c06cca3b0b52194]::fmt::format::Writer>::write_fmt
+   3:     0x7fff30c35b43 - std::panicking::rust_panic_with_hook::h102d157caa313751
+   4:     0x7ffedce44514 - <rustc_middle[305c3c558a638366]::ty::sty::ClosureArgs as rustc_middle[305c3c558a638366]::ty::context::Lift>::lift_to_tcx
+   5:     0x7ffedce43bd9 - <rustc_middle[305c3c558a638366]::ty::sty::ClosureArgs as rustc_middle[305c3c558a638366]::ty::context::Lift>::lift_to_tcx
+   6:     0x7ffedce43843 - <rustc_middle[305c3c558a638366]::ty::sty::ClosureArgs as rustc_middle[305c3c558a638366]::ty::context::Lift>::lift_to_tcx
+   7:     0x7ffedce1893e - rustc_middle[305c3c558a638366]::util::bug::bug_fmt
+   8:     0x7ffedce1816d - <rustc_middle[305c3c558a638366]::ty::adt::AdtDef>::variant_with_id
+   9:     0x7ffedce1813d - <rustc_middle[305c3c558a638366]::ty::adt::AdtDef>::variant_with_id
+  10:     0x7ffedce18862 - rustc_middle[305c3c558a638366]::util::bug::bug_fmt
+  11:     0x7ffed7b20938 - <rustc_codegen_llvm[443463b3567c396f]::llvm_::archive_ro::Child as core[504abba97fdfc25d]::ops::drop::Drop>::drop
+  12:     0x7ffed7b56302 - <rustc_target[ec0927edc6c048a7]::abi::TyAndLayout<rustc_middle[305c3c558a638366]::ty::Ty> as rustc_codegen_llvm[443463b3567c396f]::type_of::LayoutLlvmExt>::scalar_llvm_type_at
+  13:     0x7ffed7afb256 - <rustc_codegen_llvm[443463b3567c396f]::LlvmCodegenBackend as rustc_codegen_ssa[129f4ee4805a96a6]::traits::backend::CodegenBackend>::join_codegen
+  14:     0x7ffed7a98a1b - <rustc_interface[78c3a80d6cd956b8]::queries::Linker>::link
+  15:     0x7ffed7a32882 - <rustc_middle[305c3c558a638366]::ty::SymbolName as core[504abba97fdfc25d]::fmt::Debug>::fmt
+  16:     0x7ffed7a7421f - <rustc_middle[305c3c558a638366]::ty::SymbolName as core[504abba97fdfc25d]::fmt::Debug>::fmt
+  17:     0x7ffed7a38c49 - <rustc_middle[305c3c558a638366]::ty::SymbolName as core[504abba97fdfc25d]::fmt::Debug>::fmt
+  18:     0x7ffed7a2a338 - rustc_driver_impl[189419723efc7a47]::main
+  19:     0x7fff30c47ebc - std::sys::windows::thread::Thread::new::h043c21a0af8e89c3
+  20:     0x7fff774cc7e7 - BaseThreadInitThunk
+  21:     0x7fff78c2c7c0 - RtlUserThreadStart

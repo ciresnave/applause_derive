@@ -1,0 +1,12 @@
+C:\Users\cires\projects\applause\applause_derive\target\package\applause_derive-0.1.0\target\debug\deps\log-cf03ff17763b5942.s: C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\lib.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\macros.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\serde.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\__private_api.rs
+
+C:\Users\cires\projects\applause\applause_derive\target\package\applause_derive-0.1.0\target\debug\deps\liblog-cf03ff17763b5942.rmeta: C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\lib.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\macros.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\serde.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\__private_api.rs
+
+C:\Users\cires\projects\applause\applause_derive\target\package\applause_derive-0.1.0\target\debug\deps\liblog-cf03ff17763b5942.rlib: C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\lib.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\macros.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\serde.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\__private_api.rs
+
+C:\Users\cires\projects\applause\applause_derive\target\package\applause_derive-0.1.0\target\debug\deps\log-cf03ff17763b5942.d: C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\lib.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\macros.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\serde.rs C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\__private_api.rs
+
+C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\lib.rs:
+C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\macros.rs:
+C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\serde.rs:
+C:\Users\cires\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.20\src\__private_api.rs:
